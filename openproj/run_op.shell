@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker run -p 8080:80 --name openproject -e SECRET_KEY_BASE=secret \
+	-v $(pwd)/res/pgdata:/var/openproject/pgdata -v $(pwd)/res/static:/var/openproject/assets \
+	openproject/community:10.2
+	
+# User: admin PW: adminadmin

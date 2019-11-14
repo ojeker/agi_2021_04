@@ -1,0 +1,8 @@
+#Exclude openproj res
+/openproj/res/
+
+# Exclude build process temp files
+.gradle
+/gradle/
+/build/
+/bin/
