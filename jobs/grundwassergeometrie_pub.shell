@@ -1,0 +1,22 @@
+#!/bin/bash
+
+export DB_URI_SOGIS=$GRETL_PROD_SOGIS_URL
+export DB_USER_SOGIS=$GRETL_DB_USER
+export DB_PWD_SOGIS=$GRETL_DB_PASS
+
+export DB_URI_PUB=$GRETL_INT_PUB_URL
+export DB_USER_PUB=$GRETL_DB_USER
+export DB_PWD_PUB=$GRETL_DB_PASS
+
+echo "===================================================================="
+echo "DB_URI_SOGIS: $DB_URI_SOGIS"
+echo "DB_USER_SOGIS: $DB_USER_SOGIS"
+echo "DB_PWD_SOGIS: $DB_PWD_SOGIS"
+echo ""
+echo "DB_URI_PUB: $DB_URI_PUB"
+echo "DB_USER_PUB: $DB_USER_PUB"
+echo "DB_PWD_PUB: $DB_PWD_PUB"
+echo "===================================================================="
+
+/bin/bash ~/Dokumente/git/agi/jobs/gretl/start-gretl.sh --docker-image sogis/gretl-runtime:production --job-directory ~/Dokumente/git/gretljobs/afu_grundwassergeometrie_pub
+

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export ORG_GRADLE_PROJECT_aiServer=$GRETL_INT_AI_URL
+export ORG_GRADLE_PROJECT_aiUser=$GRETL_INT_AI_USER
+export ORG_GRADLE_PROJECT_aiPwd=$GRETL_INT_AI_PASS
+
+echo "===================================================================="
+echo "ORG_GRADLE_PROJECT_aiServer: $ORG_GRADLE_PROJECT_aiServer"
+echo "ORG_GRADLE_PROJECT_aiUser: $ORG_GRADLE_PROJECT_aiUser"
+echo "ORG_GRADLE_PROJECT_aiPwd: $ORG_GRADLE_PROJECT_aiPwd"
+echo "===================================================================="
+
+/bin/bash ~/Dokumente/git/gretljobs/start-gretl.sh --docker-image sogis/gretl-runtime:production --job-directory ~/Dokumente/git/gretljobs/avt_ausnahmetransportrouten_export_ai

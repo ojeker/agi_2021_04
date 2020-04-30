@@ -1,0 +1,162 @@
+INTERLIS 2.3;
+
+/** !!------------------------------------------------------------------------------
+ * !! Version    | wer | Änderung
+ * !!------------------------------------------------------------------------------
+ * !! 2020-04-29 | oj  | Initial erstellt
+ * !!==============================================================================
+ */
+!!@ technicalContact=agi@so.ch
+MODEL SO_AfU_Igel_20200429 (de)
+AT "http://www.geo.so.ch/models/AFU"
+VERSION "2020-04-29"  =
+  IMPORTS GeometryCHLV95_V1;
+
+  TOPIC Igel =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Standort =
+      /** Standort-Koordinaten.
+       */
+      Geometrie : MANDATORY GeometryCHLV95_V1.Coord2;
+	  
+	  /** StaoID
+       */
+      ID : 0 .. 2147483647;
+	  
+	  /** Name
+       */
+	  Name : TEXT*200;
+	  
+	  /** IstAktiv
+       */
+      Aktiv : BOOLEAN;
+	  	  
+	  /** BetriebTyp
+       */
+	  Typ_Code : 0 .. 999;
+	  
+	  /** Typ
+       */
+	  Typ_Text : TEXT*200;
+	  
+	  /** Adresse
+       */
+	  Adresse : TEXT*200;
+	  
+	  /** Gemeinde
+       */
+	  Gemeinde : TEXT*200;
+	  
+	  /** HDA_Nr
+       */
+	  HDA_Nr : 0 .. 2147483647;
+	  
+	  /** GELAN_PID
+       */
+	  GELAN_PID : 0 .. 2147483647;
+	  
+	  /** IGEL_PID
+       */
+	  IGEL_PID : 0 .. 2147483647;
+	  
+	  /** BewirtschafterName
+       */
+	  Name_Bewirtschafter : TEXT*200;
+	  
+	  /** DatumAktuellsteErhebung
+       */
+	  AktuellsteErhebung : INTERLIS.XMLDate;
+	  
+	  /** HaushaltAbwasserAbleitung
+       */
+	  AbwasserAbleitung_Code : TEXT*200;
+	  
+	  /** HaushaltAbwasserTotal
+       */
+	  Abwasser_Total : TEXT*200;
+	 
+	  /** SOLL_Guelle
+       */
+	  Guelle_Soll : TEXT*200;
+	  
+	  /** IST_Guelle
+       */
+	  Guelle_Ist : TEXT*200;
+	  
+	  /** SOLL_Mist
+       */
+	  Mist_Soll : TEXT*200;
+	  
+	  /** IST_Mist
+       */
+	  Mist_Ist : TEXT*200;
+	  
+	  /** Total_GVE
+       */
+	  GVE_Total : TEXT*200;
+	  
+    END Standort;
+	
+	CLASS Stall =
+      /** Standort-Koordinaten.
+       */
+      Geometrie : MANDATORY GeometryCHLV95_V1.Coord2;
+	  
+	  /** StallID
+       */
+      ID : 0 .. 2147483647;
+	  
+	  /** StaoID
+       */
+      Standort_ID : 0 .. 2147483647;
+	  
+	  /** Name
+       */
+	  Name : MTEXT*200;
+	  
+	  /** Tierart
+       */
+	  Tierart : MTEXT*200;
+	  
+	  /** AnzahlTiere
+       */
+	  AnzahlTiere : MTEXT*200;
+	  
+	  /** Aufstallung
+       */
+	  Aufstallung : MTEXT*200;
+	  
+	  /** AufenthaltWochen
+       */
+	  Aufenthalt_Wochen : MTEXT*200;
+	  
+	  /** WinterfuetterungWochen
+       */
+	  Winterfuetterung_Wochen : MTEXT*200;
+	  
+	  /** Mistplatzflaeche
+       */
+	  Mistplatzflaeche : MTEXT*200;
+	  
+	  /** GuelleVolumen
+       */
+	  Guelle_Volumen : MTEXT*200;
+	  
+	  /** Bemerkungen
+       */
+	  Bemerkungen : MTEXT*200;
+	  
+	END Stall;
+	
+	CLASS JsonStrings =
+	
+	  Standorte : MTEXT;
+	  
+	  Staelle : MTEXT;
+	  
+	END JsonStrings;
+
+  END Igel;
+
+END SO_AfU_Igel_20200429.
