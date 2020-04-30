@@ -28,14 +28,14 @@ Was also tun? In diesem Proof of Concept (POC) wird die folgende Idee konkretisi
     * schickt die Daten im Datencontainer an das AGI zurück
 * Das AGI liest die modellkonformen Daten in die GDI ein.
 
-Bildlich gesprochen schickt das AGI dem Büro den Bus (Den Datencontainer). Im Büro steigen die Features um von der 
-Datenhaltung des Büros in den Datencontainer. **Zentral dabei ist, dass beim Umsteigevorgang die Struktur des 
+Bildlich gesprochen schickt das AGI dem Büro den Bus (den Datencontainer). Im Büro steigen die Features von der 
+Datenhaltung des Büros in den Datencontainer um. **Zentral dabei ist, dass beim Umsteigevorgang die Struktur des 
 Datencontainers nicht verändert wird.** Dass also nur Zeilen in die vordefinierten Tabellen des Containers eingefüllt 
 werden, und nicht die Tabellendefinitionen selbst modifiziert werden.
 
 ##  Proof of Concept
 
-Im POC wird ermittelt, ob und wie das Einfüllen in den Datencontainer mit [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) gemacht werden kann.
+Im POC wird ermittelt, ob und wie das Einfüllen in den Datencontainer mit [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) vom Büro gemacht werden kann.
 
 Um das Ganze so richtig knackig zu machen, gehen wir von der Verwendung des **Grosi aller breit verwendeten GIS-Formate** 
 aus. Ja richtig - die Software unseres Büros verwendet das ca. 1992 erfundene Shapefile.
