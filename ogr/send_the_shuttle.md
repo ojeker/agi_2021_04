@@ -130,11 +130,11 @@ Es sind also 14 Features enthalten. Hat bestens geklappt!
 
 ## Fazit
 
-"Wir schicken den Bus" (den Datencontainer) hat Potential. Das kopieren der Features von Shape in Geopackage hat
+"Wir schicken den Bus" (den Datencontainer) hat Potential. Das Kopieren der Features von Shape in Geopackage hat
 gleich auf anhieb funktioniert.
 
-Um das massiv ressourcenfressende hin und her von noch nicht guten Daten zu minimieren, wäre es für ein Büro 
-eine gute Dienstleistung, mit Onlinedienst direkt den Geopackage Datencontainer auf Modellkonformität prüfen 
+Um das massiv ressourcenfressende Hin und Her von noch "nicht guten" Daten zu minimieren, wäre es für ein Büro 
+eine gute Dienstleistung, mit einem Onlinedienst direkt den Geopackage Datencontainer auf Modellkonformität prüfen 
 zu können.
 
 
