@@ -1,0 +1,5 @@
+java -jar ~/tools/ili2pg-3.11.2/ili2pg.jar \
+--schemaimport \
+--dbhost localhost --dbport 54321 --dbdatabase edit --dbusr admin --dbpwd admin \
+--dbschema afu_igel --models SO_AFU_Igel_202000429 \
+--defaultSrsCode 2056 --createGeomIdx --strokeArcs

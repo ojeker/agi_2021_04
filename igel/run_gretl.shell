@@ -1,0 +1,26 @@
+#!/bin/bash
+
+export ORG_GRADLE_PROJECT_dbUriEdit=jdbc:postgresql://edit-db/edit
+export ORG_GRADLE_PROJECT_dbUserEdit=gretl
+export ORG_GRADLE_PROJECT_dbPwdEdit=gretl
+
+export ORG_GRADLE_PROJECT_dbUriPub=jdbc:postgresql://pub-db/pub
+export ORG_GRADLE_PROJECT_dbUserPub=gretl
+export ORG_GRADLE_PROJECT_dbPwdPub=gretl
+
+export ORG_GRADLE_PROJECT_igelToken=$GRETL_IGEL_TOKEN
+
+echo "===================================================================="
+echo "ORG_GRADLE_PROJECT_dbUriEdit: $ORG_GRADLE_PROJECT_dbUriEdit"
+echo "ORG_GRADLE_PROJECT_dbUserEdit: $ORG_GRADLE_PROJECT_dbUserEdit"
+echo "ORG_GRADLE_PROJECT_dbPwdEdit: $ORG_GRADLE_PROJECT_dbPwdEdit"
+echo ""
+echo "ORG_GRADLE_PROJECT_dbUriPub: $ORG_GRADLE_PROJECT_dbUriPub"
+echo "ORG_GRADLE_PROJECT_dbUserPub: $ORG_GRADLE_PROJECT_dbUserPub"
+echo "ORG_GRADLE_PROJECT_dbPwdPub: $ORG_GRADLE_PROJECT_dbPwdPub"
+echo ""
+echo "ORG_GRADLE_PROJECT_igelToken: $ORG_GRADLE_PROJECT_igelToken"
+echo "===================================================================="
+
+/bin/bash ~/Dokumente/git/gretljobs/start-gretl.sh --docker-image sogis/gretl-runtime:latest --job-directory ~/Dokumente/git/gretljobs/afu_igel
+

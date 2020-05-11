@@ -1,6 +1,9 @@
 #Exclude openproj res
 /openproj/res/
 
+#Exclude folders on all levels
+pgdata/
+
 # Exclude build process temp files
 .gradle
 /gradle/
