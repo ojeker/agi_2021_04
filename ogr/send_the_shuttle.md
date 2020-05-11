@@ -28,14 +28,14 @@ Was also tun? In diesem Proof of Concept (POC) wird die folgende Idee konkretisi
     * schickt die Daten im Datencontainer an das AGI zurück
 * Das AGI liest die modellkonformen Daten in die GDI ein.
 
-Bildlich gesprochen schickt das AGI dem Büro den Bus (Den Datencontainer). Im Büro steigen die Features um von der 
-Datenhaltung des Büros in den Datencontainer. **Zentral dabei ist, dass beim Umsteigevorgang die Struktur des 
+Bildlich gesprochen schickt das AGI dem Büro den Bus (den Datencontainer). Im Büro steigen die Features von der 
+Datenhaltung des Büros in den Datencontainer um. **Zentral dabei ist, dass beim Umsteigevorgang die Struktur des 
 Datencontainers nicht verändert wird.** Dass also nur Zeilen in die vordefinierten Tabellen des Containers eingefüllt 
 werden, und nicht die Tabellendefinitionen selbst modifiziert werden.
 
 ##  Proof of Concept
 
-Im POC wird ermittelt, ob und wie das Einfüllen in den Datencontainer mit [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) gemacht werden kann.
+Im POC wird ermittelt, ob und wie das Einfüllen in den Datencontainer mit [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) vom Büro gemacht werden kann.
 
 Um das Ganze so richtig knackig zu machen, gehen wir von der Verwendung des **Grosi aller breit verwendeten GIS-Formate** 
 aus. Ja richtig - die Software unseres Büros verwendet das ca. 1992 erfundene Shapefile.
@@ -130,11 +130,11 @@ Es sind also 14 Features enthalten. Hat bestens geklappt!
 
 ## Fazit
 
-"Wir schicken den Bus" (den Datencontainer) hat Potential. Das kopieren der Features von Shape in Geopackage hat
+"Wir schicken den Bus" (den Datencontainer) hat Potential. Das Kopieren der Features von Shape in Geopackage hat
 gleich auf anhieb funktioniert.
 
-Um das massiv ressourcenfressende hin und her von noch nicht guten Daten zu minimieren, wäre es für ein Büro 
-eine gute Dienstleistung, mit Onlinedienst direkt den Geopackage Datencontainer auf Modellkonformität prüfen 
+Um das massiv ressourcenfressende Hin und Her von noch "nicht guten" Daten zu minimieren, wäre es für ein Büro 
+eine gute Dienstleistung, mit einem Onlinedienst direkt den Geopackage Datencontainer auf Modellkonformität prüfen 
 zu können.
 
 
