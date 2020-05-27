@@ -1,0 +1,26 @@
+# Environment Variables for GRETL-Development
+
+export GRETL_DB_USER="fuu"
+export GRETL_DB_PASS="bar"
+
+export GRETL_DEV_PUB_URL="jdbc:postgresql://localhost:54322/pub"
+export GRETL_DEV_EDIT_URL="jdbc:postgresql://localhost:54321/edit"
+export GRETL_DEV_EDIT_PUB_USER="admin"
+export GRETL_DEV_EDIT_PUB_PASS="admin"
+
+export GRETL_INDEXUPDATER_BASE_URL="http://indexupdater-test.dev.so.ch"
+
+export GRETL_TEST_PUB_URL="jdbc:postgresql://geodb-t.rootso.org/pub?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory"
+
+export GRETL_INT_PUB_URL="jdbc:postgresql://geodb-i.rootso.org/pub?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory"
+export GRETL_INT_EDIT_URL="jdbc:postgresql://geodb-i.rootso.org/edit?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory"
+
+export GRETL_PROD_EDIT_URL="jdbc:postgresql://geodb.rootso.org/edit?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory"
+export GRETL_PROD_SOGIS_URL="jdbc:postgresql://geodb.verw.rootso.org/sogis"
+
+export GRETL_INT_AI_URL="www-integration.geodienste.ch"
+export GRETL_INT_AI_USER="fuu"
+export GRETL_INT_AI_PASS="bar"
+
+export GRETL_IGEL_TOKEN="fuu"
+

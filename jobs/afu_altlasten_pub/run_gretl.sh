@@ -1,1 +1,0 @@
-source "$SCRIPTPATH_GRETL"
