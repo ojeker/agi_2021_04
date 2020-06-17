@@ -1,0 +1,29 @@
+CREATE OR REPLACE VIEW afu_igel_pub.igel_standort_v AS
+SELECT 
+	t_id, 
+	t_ili_tid, 	
+	id, 
+	aname, 
+	aktiv, 
+	typ_standort_code, 
+	typ_betrieb_code, 
+	typ_betrieb_text, 
+	strasse_hausnr, 
+	plz_ort, 
+	hda_nr, 
+	gelan_pid, 
+	igel_pid, 
+	name_bewirtschafter, 
+	aktuellsteerhebung, 
+	abwasserableitungen_codes::text, 
+	abwasserableitungen_texte::text, 
+	abwasser_total, 
+	guelle_soll, 
+	guelle_ist, 
+	mist_soll, 
+	mist_ist, 
+	gve_total, 
+	typ_standort_text, 
+	stall_ids::text
+FROM 
+	afu_igel_pub.igel_standort;
