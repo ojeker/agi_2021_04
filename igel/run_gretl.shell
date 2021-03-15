@@ -4,9 +4,13 @@ export ORG_GRADLE_PROJECT_dbUriEdit=jdbc:postgresql://localhost:54321/edit
 export ORG_GRADLE_PROJECT_dbUserEdit=admin
 export ORG_GRADLE_PROJECT_dbPwdEdit=admin
 
-export ORG_GRADLE_PROJECT_dbUriPub=jdbc:postgresql://localhost:54322/pub
-export ORG_GRADLE_PROJECT_dbUserPub=admin
-export ORG_GRADLE_PROJECT_dbPwdPub=admin
+#export ORG_GRADLE_PROJECT_dbUriPub=jdbc:postgresql://localhost:54322/pub
+#export ORG_GRADLE_PROJECT_dbUserPub=admin
+#export ORG_GRADLE_PROJECT_dbPwdPub=admin
+
+export ORG_GRADLE_PROJECT_dbUriPub=$GRETL_INT_PUB_URL
+export ORG_GRADLE_PROJECT_dbUserPub=$GRETL_DB_USER
+export ORG_GRADLE_PROJECT_dbPwdPub=$GRETL_DB_PASS
 
 export ORG_GRADLE_PROJECT_igelToken=$GRETL_IGEL_TOKEN
 

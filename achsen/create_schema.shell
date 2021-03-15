@@ -1,0 +1,5 @@
+java -jar ~/tools/ili2pg-4.3.1/ili2pg-4.3.1.jar \
+--schemaimport \
+--dbhost localhost --dbport 54322 --dbdatabase pub --dbusr admin --dbpwd admin \
+--dbschema avt_kantonsstrassen_pub --models SO_AVT_Kantonsstrassen_Publikation_20200707 \
+--defaultSrsCode 2056 --createGeomIdx --createMetaInfo --strokeArcs

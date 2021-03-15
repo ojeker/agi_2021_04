@@ -5,9 +5,9 @@ export ORG_GRADLE_PROJECT_dbUriEdit=$GRETL_PROD_EDIT_URL
 export ORG_GRADLE_PROJECT_dbUserEdit=$GRETL_DB_USER
 export ORG_GRADLE_PROJECT_dbPwdEdit=$GRETL_DB_PASS
 
-export ORG_GRADLE_PROJECT_dbUriPub=$GRETL_DEV_PUB_URL
-export ORG_GRADLE_PROJECT_dbUserPub=$GRETL_DEV_EDIT_PUB_USER
-export ORG_GRADLE_PROJECT_dbPwdPub=$GRETL_DEV_EDIT_PUB_PASS
+export ORG_GRADLE_PROJECT_dbUriPub=$GRETL_INT_PUB_URL
+export ORG_GRADLE_PROJECT_dbUserPub=$GRETL_DB_USER
+export ORG_GRADLE_PROJECT_dbPwdPub=$GRETL_DB_PASS
 
 echo "===================================================================="
 echo "ORG_GRADLE_PROJECT_dbUriEdit: $ORG_GRADLE_PROJECT_dbUriEdit"

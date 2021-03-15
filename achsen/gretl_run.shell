@@ -1,0 +1,15 @@
+#!/bin/bash
+
+export ORG_GRADLE_PROJECT_dbUriPub=$GRETL_DEV_PUB_URL
+export ORG_GRADLE_PROJECT_dbUserPub=$GRETL_DEV_EDIT_PUB_USER
+export ORG_GRADLE_PROJECT_dbPwdPub=$GRETL_DEV_EDIT_PUB_PASS
+
+
+echo "===================================================================="
+echo "ORG_GRADLE_PROJECT_dbUriPub: $ORG_GRADLE_PROJECT_dbUriPub"
+echo "ORG_GRADLE_PROJECT_dbUserPub: $ORG_GRADLE_PROJECT_dbUserPub"
+echo "ORG_GRADLE_PROJECT_dbPwdPub: $ORG_GRADLE_PROJECT_dbPwdPub"
+echo "===================================================================="
+
+/bin/bash ~/Dokumente/git/gretljobs/start-gretl.sh --docker-image sogis/gretl-runtime:production --docker-network host --job-directory ~/Dokumente/git/gretljobs/avt_achsen_pub
+
